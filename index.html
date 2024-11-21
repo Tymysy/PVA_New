@@ -3,8 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style/styles.css">
+    <link rel="stylesheet" href="./style/styleindex.css">
     <title>Home</title>
-    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
@@ -15,12 +16,14 @@
             <a href="#">About</a>
             <a href="#">Services</a>
             <a href="#">Contact</a>
-            <a href="login.html">Login</a>
+            <button class="btnLogin-popup" onclick="openPage()">Login</button>
         </nav>
     </header>
 
     <div id="container"></div>
 
+    <script src="three.min.js"></script>
+    <script src="script.js"></script>
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 </body>
