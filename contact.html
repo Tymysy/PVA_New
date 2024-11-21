@@ -4,9 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./style/styles.css">
-    <link rel="stylesheet" href="./style/styleindex.css">
-    <title>Home</title>
-    <script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/4.0.0/model-viewer.min.js"></script>
+    <link rel="stylesheet" href="./style/stylecontact.css">
+    <title>Contact</title>
 </head>
 <body>
 
@@ -20,18 +19,6 @@
             <button class="btnLogin-popup" onclick="openPage()">Login</button>
         </nav>
     </header>
-
-    <model-viewer src="bmwmodel.glb" ar ar-modes="webxr scene-viewer quick-look" camera-controls tone-mapping="neutral" poster="poster.webp" shadow-intensity="1" camera-orbit="-630.3deg 83.62deg 7.153m" field-of-view="30deg">
-        <div class="progress-bar hide" slot="progress-bar">
-            <div class="update-bar"></div>
-        </div>
-        <button slot="ar-button" id="ar-button">
-            View in your space
-        </button>
-        <div id="ar-prompt">
-            <img src="https://modelviewer.dev/shared-assets/icons/hand.png">
-        </div>
-    </model-viewer>
     
 
     <script src="./src/script.js"></script>

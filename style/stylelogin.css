@@ -1,12 +1,19 @@
 body {
-    background-image: url(/img/bmwH.jpg);
+    background-image: url(/img/bmwBC.jpg);
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: 100%;
     background-position: center;
 }
 
 .navigation .btnLogin {
     margin-right: 40px;
+}
+
+#container {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
 }
 
 .navigation .btnLogin-popup {
@@ -32,12 +39,10 @@ body {
 }
 
 .wrapper {
-    position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-left: 750px;
-    margin-top: 200px;
+    margin-top: 250px;
     width: 400px;
     height: 440px;
     background: transparent;
