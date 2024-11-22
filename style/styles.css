@@ -27,10 +27,9 @@ header {
 }
 
 .logo {
-    font-size: 2em;
-    color: #fff;
-    margin-top: 10px;
-    margin-left: 40px;
+    margin-left: 20px;
+    width: 64px;
+    height: 64px;
     user-select: none;
 }
 
