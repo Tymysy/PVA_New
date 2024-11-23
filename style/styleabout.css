@@ -1,0 +1,14 @@
+body {
+    background: url(../img/bmwBC.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+h1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 5rem;
+    color: #FDA481;
+    font-variant: small-caps;
+}
