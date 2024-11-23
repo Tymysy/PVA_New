@@ -42,6 +42,11 @@ header {
     margin-right: 40px;
 }
 
+.navigation a:hover {
+    color: #B4182D;
+    transition: .4s;
+}
+
 .navigation a::after {
     content: "";
     position: absolute;
@@ -62,10 +67,6 @@ header {
     
 }
 
-.navigation .btnLogin {
-    margin-right: 40px;
-}
-
 .navigation .btnLogin-popup {
     width: 130px;
     height: 50px;
@@ -84,6 +85,6 @@ header {
 
 .navigation .btnLogin-popup:hover {
     background-color: #fff;
-    color: #54162B;
-
+    color: #B4182D;
+    border: 2px solid #B4182D;
 }
