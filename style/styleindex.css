@@ -60,10 +60,14 @@ model-viewer {
 
 .card {
     position: relative;
-    width: 500px;
-    height: 580px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 650px;
+    height: 600px;
     overflow: hidden;
-    margin-top: 60px;
+    margin-top: 50px;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     cursor: pointer;
@@ -98,10 +102,41 @@ model-viewer {
     bottom: 0;
 }
 
+.text-c-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    font-size: 1rem;
+    flex-direction: column;
+    border-radius: 20px;
+    height: 600px;
+    padding: 20px;
+    margin-top: 90px;
+    margin-right: 150px;
+    transition: .5s;
+}
+
+#firstext {
+    margin-top: 50px;
+}
+
+.text-c-box:hover {
+    color: black;
+    background: linear-gradient(to bottom, #ffffff, #f0f0f0, #dcdcdc, #b0b0b0);
+    cursor: default;
+    box-shadow: 0 0 50px 20px rgba(0, 0, 0, 0.5);
+    transition: .5s;
+}
+
+.text-content h2 {
+    font-variant: small-caps;
+    font-size: 2rem;
+}
+
 .text-content {
-    margin-top: 60px;
     flex: 1;
-    max-width: 400px;
+    max-width: 800px;
   }
 
   .text-content h1 {
@@ -110,4 +145,26 @@ model-viewer {
 
   .text-content p {
     line-height: 1.6;
+  }
+
+  .More {
+    align-items: center;
+    padding: 10px;
+    border-radius: 20px;
+    border: none;
+    color: black;
+    font-variant: small-caps;
+    font-size: 1rem;
+    margin-top: 20px;
+    width: 80px;
+    height: 40px;
+    transition: .3s;
+  }
+
+  .More:hover {
+    color: #fff;
+    background-color: black;
+    box-shadow: 0 0 40px 20px rgba(0, 0, 0, 0.5);
+    transition: .3s;
+    font-weight: 700;
   }
