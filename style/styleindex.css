@@ -120,7 +120,7 @@ model-viewer {
     padding: 20px;
     margin-top: 90px;
     margin-right: 150px;
-    transition: .5s;
+    transition: 1s;
 }
 
 #firstext {
