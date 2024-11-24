@@ -79,3 +79,11 @@ header {
     color: black;
     border: 2px solid black;
 }
+
+.containerMoreCars {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+}
