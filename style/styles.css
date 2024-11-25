@@ -9,6 +9,15 @@ html {
     scroll-behavior: smooth;
 }
 
+.bodycars {
+    background: linear-gradient(
+        90deg,
+        #f3e5f5 0%,
+        #ce93d8 33%,
+        #9c27b0 66%,
+        #4a148c 100%
+      );
+}
 
 header {
     position: fixed;
@@ -76,14 +85,111 @@ header {
 
 .navigation .btnLogin-popup:hover {
     background-color: #fff;
-    color: black;
-    border: 2px solid black;
+    color: red;
 }
 
-.containerMoreCars {
+.containerCars{
     display: flex;
     justify-content: center;
     align-items: center;
     width: 100vw;
     height: 100vh;
 }
+
+.containercarousel {
+    width: 80%;
+    max-width: 1200px; 
+    margin-top: 5vh;
+}
+
+.containerCars img {
+    border: 2px solid #fff;
+}
+
+#btnDownCars {
+    position: absolute;
+    bottom: 15px;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 10px 20px;
+    font-size: 16px;
+    backdrop-filter: blur(50px);
+    background-color: rgba(255, 255, 255, 0.2);
+    color: #fff;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    z-index: 10;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
+}
+
+#btnDownCars:hover {
+    border: 2px solid #fff;
+    box-shadow: 0 16px 64px rgba(255, 255, 255, 0.8);
+}
+
+.containerCars h1 {
+    position: absolute;
+    top: 50px;
+    color: aliceblue;
+    font-weight: 600;
+}
+
+.containerTextCars{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    padding: 20px;
+    box-sizing: border-box;
+  }
+
+.containerTextCars h1 {
+    text-align: center;
+    margin-bottom: 40px;
+    font-size: 2.5rem;
+    font-weight: 600;
+    color: aliceblue;
+
+  }
+
+  .TextCars {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+  }
+
+  .TextCards {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 400px;
+    height: 600px;
+    text-align: center;
+    transition: .5s;
+  }
+
+  .card-title {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #fff !important;
+    margin-bottom: 25px !important;
+  }
+
+  .card-body p {
+    font-size: 1.1rem;
+    color: #fff;
+}
+
+.card-body p:hover {
+    color: black;
+}
+
+.TextCards:hover {
+    background: linear-gradient(to bottom, black, #f0f0f0, #dcdcdc, #b0b0b0);
+    box-shadow: 0 0 50px 0px rgba(255, 255, 255, 0.6);
+  }

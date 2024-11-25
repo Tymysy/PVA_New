@@ -130,6 +130,7 @@ model-viewer {
 .text-c-box:hover {
     color: black;
     background: linear-gradient(to bottom, #ffffff, #f0f0f0, #dcdcdc, #b0b0b0);
+    backdrop-filter: blur(40px);
     cursor: default;
     box-shadow: 0 0 50px 20px rgba(0, 0, 0, 0.5);
     transition: .5s;
@@ -173,4 +174,4 @@ model-viewer {
     box-shadow: 0 0 40px 20px rgba(0, 0, 0, 0.5);
     transition: .3s;
     font-weight: 700;
-  }
+    }
