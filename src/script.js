@@ -22,3 +22,19 @@ function openX5() {
 function open7S() {
     window.location.href = "./carsHtml/7S.html"
 }
+
+function openfacebook() {
+    window.location.href = "https://www.facebook.com/"
+}
+
+function openinstagram() {
+    window.location.href = "https://www.instagram.com/"
+}
+
+function opentwitter() {
+    window.location.href = "https://x.com/"
+}
+
+function opentelegram() {
+    window.location.href = "https://web.telegram.org/"
+}
