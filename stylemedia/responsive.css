@@ -1,0 +1,74 @@
+@media screen and (max-width: 320px) {
+    .container3d {
+        display: none;
+    }
+
+
+    .btnDown {
+        display: none;
+    }
+
+    .container {
+        justify-content: center;
+        gap: 20px;
+    }
+
+    .text-content {
+        display: none;
+    }
+
+    .cards-column {
+        align-items: center;
+        gap: 10px;
+        margin-left: 0px;
+    }
+    
+    .card {
+        width: 250px;
+        height: 230px;
+    }
+    
+    .card:hover img {
+        transform: none;
+    }
+
+    header {
+        display: none;
+    }
+
+    .navigationResponsive {
+        display: flex;
+    }
+
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        background-color: blur(20px);
+        padding-top: 50px;
+        z-index: 1;
+      }
+    
+      .nav-links.active {
+        display: flex;
+      }
+    
+      .nav-links a,
+      .nav-links button {
+        margin: 10px 20px;
+        font-size: 18px;
+      }
+      
+      .nav-links button {
+        background-color: transparent;
+        border-radius: 20px;
+        border: 1px solid #fff;
+      }
+
+    .Responh2 {
+        display: flex;
+    }
+}

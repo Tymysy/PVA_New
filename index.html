@@ -5,11 +5,29 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./style/styles.css">
     <link rel="stylesheet" href="./style/styleindex.css">
+    <link rel="stylesheet" href="./stylemedia/responsive.css">
     <link rel="icon" type="image/x-icon" href="./favicon/logo.ico">
     <title>Home</title>
     <script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/4.0.0/model-viewer.min.js"></script>
 </head>
 <body>
+
+    <div class="navigationResponsive">
+        <div class="hamburger-menu" onclick="toggleMenu(event)">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+          </div>
+      
+          <div id="nav-links" class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="services.html">Services</a>
+            <a href="contact.html">Contact</a>
+            <a href="moreproducts.html">Products</a>
+            <button class="btnLogin-popup">Login</button>
+          </div>
+    </div>
 
     <header>
         <img class="logo" src="./img/logo.png">
@@ -40,29 +58,31 @@
 
     <button class="btnDown" id="btnDown">Down</button>
 
+    <h2 class="Responh2">home</h2>
+
     <div class="container">
         <div class="cards-column">
             <div class="card">
                 <div class="content">
-                    <img src="./img/m4.png">
+                    <img src="./img/m4.png" onclick="openM4()">
                 </div>
                 <div class="text-box">BMW M4</div>
             </div>
             <div class="card">
                 <div class="content">
-                    <img src="./img/x3.png">
+                    <img src="./img/x3.png" onclick="openX3()">
                 </div>
                 <div class="text-box">BMW X3</div>
             </div>
             <div class="card">
                 <div class="content">
-                    <img src="./img/x5.png">
+                    <img src="./img/x5.png" onclick="openX5()">
                 </div>
                 <div class="text-box">BMW X5</div>
             </div>
             <div class="card">
                 <div class="content">
-                    <img src="./img/i7s.png">
+                    <img src="./img/i7s.png" onclick="open7S()">
                 </div>
                 <div class="text-box">BMW 7-Series</div>
             </div>

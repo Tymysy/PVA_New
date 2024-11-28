@@ -38,3 +38,19 @@ function opentwitter() {
 function opentelegram() {
     window.location.href = "https://web.telegram.org/"
 }
+
+function toggleMenu(event) {
+    event.stopPropagation();
+  
+    const navLinks = document.getElementById('nav-links');
+    navLinks.classList.toggle('active');
+  }
+  
+  document.addEventListener('click', function(event) {
+    const navLinks = document.getElementById('nav-links');
+    const hamburgerMenu = document.querySelector('.hamburger-menu');
+  
+    if (!hamburgerMenu.contains(event.target) && !navLinks.contains(event.target)) {
+      navLinks.classList.remove('active');
+    }
+  });
