@@ -1,4 +1,4 @@
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 425px) {
     .container3d {
         display: none;
     }
@@ -24,7 +24,7 @@
     }
     
     .card {
-        width: 250px;
+        width: 80%;
         height: 230px;
     }
     
