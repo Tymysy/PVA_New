@@ -71,4 +71,41 @@
     .Responh2 {
         display: flex;
     }
+
+    .container-img {
+        display: none;
+    }
+
+    .container-contact {
+        justify-content: center;
+        height: 100vh;
+        width: 100%;
+    }
+
+    .container-right-text {
+        width: 90%;
+        height: 90%;
+        margin: -40px 0px 0px 0px;
+        padding: 35px;
+    }
+
+    .container-right-text i {
+        margin-right: 8px;
+    }
+
+    .container-right-text h2 {
+        font-size: 1.2rem;
+        font-weight: 400;
+        color: black;
+      }
+      .container-right-text p {
+        margin-top: 12px;
+        font-size: 1rem;
+        font-weight: 500;
+        color: aliceblue;
+      }
+
+      #firsticon {
+        margin-top: 250px;
+      }
 }
