@@ -108,4 +108,8 @@
       #firsticon {
         margin-top: 250px;
       }
+
+      #btnDownCars {
+        display: none;
+      }
 }

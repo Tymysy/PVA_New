@@ -114,5 +114,22 @@
     <script src="./src/script.js"></script>
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script>
+        function toggleMenu(event) {
+        event.stopPropagation();
+  
+        const navLinks = document.getElementById('nav-links');
+        navLinks.classList.toggle('active');
+    }
+  
+    document.addEventListener('click', function(event) {
+        const navLinks = document.getElementById('nav-links');
+        const hamburgerMenu = document.querySelector('.hamburger-menu');
+  
+        if (!hamburgerMenu.contains(event.target) && !navLinks.contains(event.target)) {
+        navLinks.classList.remove('active');
+        }
+    });
+  </script>
 </body>
 </html>
