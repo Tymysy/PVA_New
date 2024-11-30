@@ -29,7 +29,7 @@
                 <img src="">
             </div>
             <ul>
-                <li><i class="bi bi-box-fill"></i><h5>Model : </h5><p class="ModelOfCar">M4</p></li>
+                <li><i class="bi bi-box-fill"></i><h5>Model : </h5><p class="ModelOfCar"></p></li>
                 <li><img src="./img/iconHP.png" class="iconimg"><p>Horsepower : </p></li>
                 <li><i class="bi bi-basket"></i><p>Default price : </p></li>
                 <li><i class="bi bi-clock-history"></i><p>Year of manufacture : </p></li>
@@ -59,11 +59,68 @@
                 <li><i class="bi bi-clock-history"></i><p>Year of manufacture : </p></li>
             </ul>
         </div>
+        <div class="cardproducts" id="firstcard">
+            <div class="container-img-products">
+                <img src="">
+            </div>
+            <ul>
+                <li><i class="bi bi-box-fill"></i><h5>Model : </h5><p id="ModelOfCar"></p></li>
+                <li><img src="./img/iconHP.png" class="iconimg"><p>Horsepower : </p></li>
+                <li><i class="bi bi-basket"></i><p>Default price : </p></li>
+                <li><i class="bi bi-clock-history"></i><p>Year of manufacture : </p></li>
+            </ul>
+        </div>
+        <div class="cardproducts" id="firstcard">
+            <div class="container-img-products">
+                <img src="">
+            </div>
+            <ul>
+                <li><i class="bi bi-box-fill"></i><h5>Model : </h5><p id="ModelOfCar"></p></li>
+                <li><img src="./img/iconHP.png" class="iconimg"><p>Horsepower : </p></li>
+                <li><i class="bi bi-basket"></i><p>Default price : </p></li>
+                <li><i class="bi bi-clock-history"></i><p>Year of manufacture : </p></li>
+            </ul>
+        </div>
+        <div class="cardproducts" id="firstcard">
+            <div class="container-img-products">
+                <img src="">
+            </div>
+            <ul>
+                <li><i class="bi bi-box-fill"></i><h5>Model : </h5><p id="ModelOfCar"></p></li>
+                <li><img src="./img/iconHP.png" class="iconimg"><p>Horsepower : </p></li>
+                <li><i class="bi bi-basket"></i><p>Default price : </p></li>
+                <li><i class="bi bi-clock-history"></i><p>Year of manufacture : </p></li>
+            </ul>
+        </div>
+        <div class="cardproducts" id="firstcard">
+            <div class="container-img-products">
+                <img src="">
+            </div>
+            <ul>
+                <li><i class="bi bi-box-fill"></i><h5>Model : </h5><p id="ModelOfCar"></p></li>
+                <li><img src="./img/iconHP.png" class="iconimg"><p>Horsepower : </p></li>
+                <li><i class="bi bi-basket"></i><p>Default price : </p></li>
+                <li><i class="bi bi-clock-history"></i><p>Year of manufacture : </p></li>
+            </ul>
+        </div>
     </div>
     
 
     <script src="./src/script.js"></script>
     <script>
+
+        const cards = document.querySelectorAll('.cardproducts');
+
+        cards.forEach(card => {
+        card.addEventListener('click', () => {
+            const modelParagraph = card.querySelector('.ModelOfCar');
+            if (modelParagraph) {
+                const model = modelParagraph.textContent.trim();
+                const targetPath = `Products/${model}.html`;
+                window.location.href = targetPath;
+                }
+            });
+        });
         
     </script>
 </body>
