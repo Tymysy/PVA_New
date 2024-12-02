@@ -85,12 +85,12 @@
     .container-right-text {
         width: 90%;
         height: 90%;
-        margin: -40px 0px 0px 0px;
-        padding: 35px;
+        margin: -40px 10px 0px 10px !important;
+        padding: 30px;
     }
 
     .container-right-text i {
-        margin-right: 8px;
+        margin-right: 10px;
     }
 
     .container-right-text h2 {
@@ -112,4 +112,44 @@
       #btnDownCars {
         display: none;
       }
+}
+
+@media screen and (max-width: 768px) {
+    .navigation a {
+        font-size: 0.9rem;
+    }
+
+    .navigation .btnLogin-popup {
+        font-size: 0.9rem;
+    }
+
+    #btnDown {
+        padding: 5px 10px;
+    }
+
+    .text-content {
+        display: none;
+    }
+
+    .container {
+        justify-content: center;
+        gap: 20px;
+    }
+
+    .cards-column {
+        align-items: center;
+        gap: 10px;
+        margin-left: 0px;
+    }
+    
+    .container-img {
+        display: none;
+    }
+
+    .container-right-text {
+        width: 100%;
+        height: 90%;
+        margin: 80px 30px 20px 30px;
+        padding: 25px;
+    }
 }
