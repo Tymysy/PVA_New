@@ -36,12 +36,28 @@
                 <label for="file-upload" class="file-label">Choose a file</label>
                 <input type="file" id="file-upload" name="file-upload" accept=".jpg, .jpeg, .png" multiple>
                 <p id="file-name">No file chosen</p>
-                <button id="carButton" onclick="addCard()">create an announcement <i class="bi bi-file-plus" id="create-icon"></i></button>
+                <button id="carButton">create an announcement <i class="bi bi-file-plus" id="create-icon"></i></button>
             </ul>
         </div>
 
     <script src="./src/script.js"></script>
     <script>
+<<<<<<< HEAD
+=======
+
+        const cardofcar = document.querySelectorAll('.cardproducts');
+
+        cardofcar.forEach(cardof => {
+        cardof.addEventListener('click', () => {
+            const modelParagraph = cardof.querySelector('.ModelOfCar');
+            if (modelParagraph) {
+                const model = modelParagraph.textContent.trim();
+                const targetPath = `Products/${model}.html`;
+                window.location.href = targetPath;
+                }
+            });
+        });
+>>>>>>> 9be44248e3c297ee530db3024279ecab440e422b
     </script>
 </body>
 </html>
