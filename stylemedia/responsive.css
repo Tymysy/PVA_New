@@ -78,14 +78,15 @@
 
     .container-contact {
         justify-content: center;
+        margin: 0;
         height: 100vh;
         width: 100%;
     }
 
     .container-right-text {
-        width: 90%;
-        height: 90%;
-        margin: -40px 10px 0px 10px !important;
+        width: 95% !important;
+        height: 95% !important;
+        margin: -20px 10px 0px 10px !important;
         padding: 30px;
     }
 
@@ -93,20 +94,21 @@
         margin-right: 10px;
     }
 
-    .container-right-text h2 {
+    .container-right-text h2 { 
         font-size: 1.2rem;
         font-weight: 400;
         color: black;
       }
       .container-right-text p {
         margin-top: 12px;
-        font-size: 1rem;
+        font-size: .8rem;
         font-weight: 500;
         color: aliceblue;
       }
 
-      #firsticon {
-        margin-top: 250px;
+      .container-right-text .strong {
+        margin-top: 10px;
+        font-size: 1rem;
       }
 
       #btnDownCars {
